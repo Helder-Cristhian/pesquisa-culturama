@@ -14,50 +14,50 @@
             <form action="" method="get">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
-                    <label for="userName">Nome</label>
-                    <input type="text" name="userName" required>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="userName" required id="name" placeholder="Digite seu nome...">
 
-                    <label for="userAge">Idade</label>
-                    <input type="number" name="userAge" min="12" max="100" required>
+                    <label for="age">Idade:</label>
+                    <input type="number" name="userAge" min="12" max="100" required id="age" placeholder="Digite sua idade...">
 
-                    <label for="birthDate">Data de nascimento</label>
-                    <input type="date" name="birthDate">
+                    <label for="birthDate">Data de nascimento:</label>
+                    <input type="date" name="userbirthDate" id="birthDate">
                     
-                    <label for="userEmail">Email</label>
-                    <input type="email" name="userEmail" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="userEmail" required id="email" placeholder="Digite seu e-mail...">
 
-                    <label for="userPhoneNumber">Telefone</label>
-                    <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços oi hífen">
+                    <label for="phoneNumber">Telefone:</label>
+                    <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" id="phoneNumber" placeholder="DDD + número sem espaços ou hífen">
 
-                    <label for="userImage">Upload de foto</label>
-                    <input type="file" accept="image/*" name="userImage">
+                    <label for="image">Upload de foto:</label>
+                    <input type="file" accept="image/*" name="userImage" id="image">
                 </fieldset> 
                 
                 <fieldset>
                     <legend>Perfil</legend>
 
                     <p>Gênero:</p>
-                    <input type="radio" name="userGender" value="Masculino">
-                    <label for="userGender">Masculino</label>
+                    <input type="radio" name="userGender" value="Masculino" id="masc">
+                    <label for="masc">Masculino</label>
 
-                    <input type="radio" name="userGender" value="Feminino">
-                    <label for="userGender">Feminino</label>
+                    <input type="radio" name="userGender" value="Feminino" id="fem">
+                    <label for="fem">Feminino</label>
                     
-                    <input type="radio" name="userGender" value="notInformed">
-                    <label for="userGender">Prefiro não informar</label>
+                    <input type="radio" name="userGender" value="notInformed" id="notInformed" >
+                    <label for="notInformed" >Prefiro não informar</label>
 
                     <label for="maritalStatus">Estado civil:</label>
-                    <select name="maritalStatus">
+                    <select name="userMaritalStatus" id="maritalStatus">
                         <option value="notInformed">Selecione...</option>
-                        <option value="Casado">Casado</option>
-                        <option value="Divorciado">Divorciado</option>
-                        <option value="Solteiro">Solteiro</option>
+                        <option value="Casado">Casado(a)</option>
+                        <option value="Divorciado">Divorciado(a)</option>
+                        <option value="Solteiro">Solteiro(a)</option>
                         <option value="União estável">União estável</option>
-                        <option value="Viúvo">Viúvo</option>
+                        <option value="Viúvo">Viúvo(a)</option>
                     </select>
                     
-                    <label for="userState">Estado:</label>
-                    <select name="userState" required>
+                    <label for="state">Estado:</label>
+                    <select name="userState" required id="state">
                       <option value="notInformed">Selecione...</option>
                       <option value="acre">Acre</option>
                       <option value="alagoas">Alagoas</option>
@@ -88,24 +88,24 @@
                       <option value="tocantins">Tocantins</option>
                     </select>
 
-                    <label for="userCity">Cidade:</label>
-                    <input type="text" name="userCity" placeholder="Digite aqui...">
+                    <label for="city">Cidade:</label>
+                    <input type="text" name="userCity" placeholder="Digite aqui..." id="city">
                 </fieldset>
                 
                 <fieldset>
                     <legend>Hábitos</legend>
 
-                    <input type="checkbox" name="social" value="Facebook">
-                    <label for="social">Facebook</label>
+                    <input type="checkbox" name="social" value="facebook" id="facebook">
+                    <label for="facebook">Facebook</label>
 
-                    <input type="checkbox" name="social" value="Instagram">
-                    <label for="social">Instagram</label>
+                    <input type="checkbox" name="social" value="instagram" id="instagram">
+                    <label for="instagram">Instagram</label>
 
-                    <input type="checkbox" name="social" value="Linkedin">
-                    <label for="social">Linkedin</label>
+                    <input type="checkbox" name="social" value="linkedin" id="linkedin">
+                    <label for="linkedin">Linkedin</label>
 
-                    <input type="checkbox" name="social" value="X">
-                    <label for="social">X</label>
+                    <input type="checkbox" name="social" value="x" id="x">
+                    <label for="x">X</label>
 
                 </fieldset>
 
