@@ -14,7 +14,7 @@
     <main>
         <header>
         <img src="Img/logo-culturama.png" alt="logo-culturama">
-        <h1>Pesquisa Online</h1>
+        <h1>Pesquisa de Opinião</h1>
     </header>
         <section>
             <form action="" method="get">
@@ -52,6 +52,7 @@
                     <input type="radio" name="userGender" value="notInformed" id="notInformed" >
                     <label for="notInformed" >Prefiro não informar</label>
 
+                    <br>
                     <label for="maritalStatus">Estado civil:</label>
                     <select name="userMaritalStatus" id="maritalStatus">
                         <option value="notInformed">Selecione...</option>
@@ -100,6 +101,7 @@
                 
                 <fieldset>
                     <legend>Hábitos</legend>
+                    <p>Redes sociais:</p>
 
                     <input type="checkbox" name="social" value="facebook" id="facebook">
                     <label for="facebook">Facebook</label>
@@ -113,6 +115,7 @@
                     <input type="checkbox" name="social" value="x" id="x">
                     <label for="x">X</label>
 
+                    <br>
                     <label for="musicStyle">Estilo musical:</label>
                     <input type="text" name="userMusicStyle" id="musicStyle" list="styleTips">
                     <datalist id="styleTips">
@@ -142,6 +145,7 @@
                     <input type="radio" name="userSatisfation" value="ruim" id="ruim">
                     <label for="ruim">Ruim</label>
 
+                    <br>
                     <label for="comment">Escreva sua opinião:</label>
                     <textarea name="userComment" id="comment" placeholder="Digite aqui sua opinião..."></textarea>
                 </fieldset>
@@ -151,7 +155,7 @@
 
                     <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
                     <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
-
+                    <br>
                     <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
                     <label for="getResult">Desejo receber o resultado por e-mail</label>
 

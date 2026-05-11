@@ -33,6 +33,7 @@ form{
     background-color: #ffffff;
     padding: 15px;
     border-radius: 15px;
+    margin-bottom: 100px;
 }
 
 fieldset{
@@ -51,6 +52,11 @@ legend{
 label{
     display: inline-block;
     margin-bottom: 8px;
+}
+
+p{
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 input, select, textarea{
@@ -74,3 +80,32 @@ input[type="color"]{
     padding: 0 5px;
 }
 
+input:invalid, select:invalid, textarea:invalid{
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid{
+    border-color: green;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    cursor: pointer; /* serve para definir o modo do cursor, serve para link ou botoes */
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #ffffff;
+    border: 1px solid black;
+}
+
+button[type="reset"]:hover{
+    background-color: rgb(128, 15, 0);
+    color: #ffffff;
+    border: 1px solid black;
+}
